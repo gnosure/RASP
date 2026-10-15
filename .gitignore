@@ -1,0 +1,68 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.conda/
+
+# Native build products; keep .cpp and .cu source files
+build/
+dist/
+*.egg-info/
+*.o
+*.obj
+*.so
+*.pyd
+*.dll
+
+# Downloaded datasets and pretrained weights
+/dataset/
+/datasets/
+/data/
+/pretrained/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.safetensors
+*.onnx
+*.lmdb
+*.mdb
+
+# Dataset and weight archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.xz
+
+# Runtime logs and generated evaluation artifacts
+*.log
+/logs/
+/output_logs.txt
+/outputs/
+/original/
+/adv/
+/pure_images/
+/visual_assets*/
+/radius_stats*/
+/radius_figures*/
+/wandb/
+/runs/
+
+# Machine-specific settings and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

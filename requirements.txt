@@ -1,0 +1,24 @@
+# Evaluation dependencies for the Python 3.9 installation template.
+# This is not a lock file exported from the paper's experiment environment.
+# Install the CUDA build of torch/torchvision first; see readme.md.
+torch==2.0.1
+torchvision==0.15.2
+
+# Keep NumPy 1.x for compatibility with this legacy binary stack.
+numpy==1.26.4
+pyarrow==11.0.0
+scipy
+
+# Image loading, configuration, and progress reporting.
+Pillow
+PyYAML
+six
+lmdb
+tqdm
+
+# Required when the bundled Score-SDE CUDA extensions are compiled.
+ninja
+
+# Match the AutoAttack revision declared by the upstream RobustBench source.
+autoattack @ git+https://github.com/fra31/auto-attack.git@a39220048b3c9f2cca9a4d3a54604793c68eca7e#egg=autoattack
+robustbench @ git+https://github.com/RobustBench/robustbench.git
